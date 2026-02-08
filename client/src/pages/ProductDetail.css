@@ -1,0 +1,272 @@
+.product-detail-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 200px);
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.product-image-section {
+  background: var(--cream);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  font-size: 150px;
+}
+
+.product-info-section h1 {
+  color: var(--primary-green);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--warning);
+}
+
+.star-filled {
+  color: var(--warning);
+}
+
+.star-empty {
+  color: var(--border-color);
+}
+
+.category-badge {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.price-section {
+  margin: 25px 0;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--lighter-green);
+}
+
+.unit {
+  font-size: 20px;
+  color: var(--text-light);
+}
+
+.farmer-info {
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+.farmer-info h3 {
+  color: var(--primary-green);
+  margin-bottom: 15px;
+}
+
+.farmer-info p {
+  margin: 8px 0;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.description {
+  margin: 25px 0;
+}
+
+.description h3 {
+  color: var(--primary-green);
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.quantity-section {
+  margin: 25px 0;
+}
+
+.quantity-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.qty-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qty-btn:hover {
+  background-color: var(--light-green);
+}
+
+.quantity-controls input {
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.available-qty {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-large {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reviews-section,
+.add-review-section {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 2px solid var(--border-color);
+}
+
+.reviews-section h2,
+.add-review-section h2 {
+  color: var(--primary-green);
+  margin-bottom: 25px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card {
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  display: flex;
+  gap: 3px;
+}
+
+.review-text {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.review-date {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.review-form {
+  background: var(--cream);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.rating-input {
+  margin-bottom: 20px;
+}
+
+.rating-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star-rating .clickable {
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.star-rating .clickable:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 968px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+

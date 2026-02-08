@@ -1,0 +1,190 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 20px;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content {
+  padding: 60px 0;
+}
+
+.content-section {
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-section h2 {
+  color: var(--primary-green);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.problem-section {
+  background-color: var(--cream);
+  padding: 60px 0;
+  margin: 60px 0;
+}
+
+.problem-section h2 {
+  text-align: center;
+  color: var(--primary-green);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.problem-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.problem-card h3 {
+  color: var(--primary-green);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.problem-card p {
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.impact-section {
+  padding: 60px 0;
+}
+
+.impact-section h2 {
+  text-align: center;
+  color: var(--primary-green);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.impact-card {
+  background: var(--cream);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+.impact-icon {
+  font-size: 50px;
+  color: var(--lighter-green);
+  margin-bottom: 20px;
+}
+
+.impact-card h3 {
+  color: var(--primary-green);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.impact-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-card ul li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.impact-card ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--light-green) 100%);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .content-section h2,
+  .problem-section h2,
+  .impact-section h2 {
+    font-size: 28px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+  }
+}
+
